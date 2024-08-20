@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0; /* Cor de fundo da página */
+    color: #333; /* Cor do texto */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333; /* Cor do fundo do menu */
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    z-index: 1000; /* Garante que o menu fique acima do conteúdo */
+}
+
+#logo {
+    margin-left: 20px; /* Espaço interno à esquerda do logo */
+    margin-right: 50px; /* Espaço entre o logo e o menu */
+}
+
+#logo h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #fff;
+}
+
+#logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centraliza o menu de navegação */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 60px; /* Adiciona espaço suficiente para o menu fixo */
+    background-color: #fff; /* Cor de fundo da página */
+    border-radius: 8px;
+    padding: 20px;
+}
+
+#principal {
+    padding: 0;
+}
+
+#capa img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#foto-galeria {
+    background-color: #f9f9f9; /* Cor de fundo da seção de fotos */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 40px; /* Espaço adicional acima da galeria de fotos */
+    text-align: center; /* Centraliza o texto da seção */
+}
+
+#foto-galeria h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.fotos-flex {
+    display: flex;
+    flex-wrap: wrap; /* Permite a quebra de linha das fotos */
+    justify-content: center; /* Centraliza as fotos horizontalmente */
+    gap: 20px;
+    max-width: 1000px; /* Largura máxima para garantir que as fotos não se espalhem muito */
+    margin: 0 auto; /* Centraliza a galeria na página */
+}
+
+.foto-item {
+    flex: 1 1 calc(25% - 20px); /* Cada foto ocupa 25% da largura menos o gap */
+    max-width: 300px; /* Largura máxima das fotos */
+    margin: 10px; /* Margem ao redor das fotos */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
+.foto-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.foto-item h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+}
+
+a:hover {
+    color: aqua;
+}
